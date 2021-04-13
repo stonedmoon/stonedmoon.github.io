@@ -3,8 +3,8 @@
 <style>
 .buttonstyle {
     border-radius: 10px; 
-    font-size: 20px; 
-    font-family: "arial"; 
+    font-size: min(20px, 5vw);
+    font-family: "futura"; 
     color: orange; 
     border: 0px solid white;
     border-color: #feb59d;
@@ -18,14 +18,51 @@
     border: 5px solid white;
     transition: border 200ms linear, color 200ms linear;
 }
+.smallbuttonstyle {
+    border-radius: 10px; 
+    font-size: min(10px, 2.5vw); 
+    font-family: "futura"; 
+    color: orange; 
+    border: 0px solid white;
+    border-color: #feb59d;
+    background-color: seagreen;
+    padding: 10px;
+    transition: border 200ms linear, color 200ms linear;
+}
+
+.smallbuttonstyle:hover {
+    color: white;
+    border: 5px solid white;
+    transition: border 200ms linear, color 200ms linear;
+}
+h1 {
+	font-family: "futura";
+}
+h2 {
+	font-family: "futura";
+}
+p {
+	font-family: "futura";
+}
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: 10vw !important;
+  }
+  h2 {
+	font-size: 6vw !important;
+  }
+  p {
+    font-size: 4vw !important;
+  }
+}
 </style>
 
 <head>
 <title>StonedMoon</title>
 </head>
 <body style="background-image: linear-gradient(red, yellow);">
-<img style="margin-left: auto; margin-right: auto; display: block; width: 30px;" src="https://raw.githubusercontent.com/stonedmoon/stonedmoon.github.io/main/stonedmoonlogo.png"/>
-<h1 style="text-align:center; color:green">stonedmoon</h1>
+<img style="margin-left: auto; margin-right: auto; display: block; width: 10%; max-width: 30px;" src="https://raw.githubusercontent.com/stonedmoon/stonedmoon.github.io/main/stonedmoonlogo.png"/>
+<h1 style="text-align:center; color:green">StonedMoon</h1>
 
 <div style="text-align:center">
 <h2>Contract Address: 0x510A41Af47d93793882992E8fC2519Fbd72E4DcE</h2>
@@ -33,20 +70,26 @@
   <p>if you try to buy/sell/send/receive outside <b>blaze it time</b> your funds will be redirected to all stonedmooners<p>
   <p>Twice a day, you have 420 seconds to buy/sell/send/receive</p>
   <p>use 2.5% slippage. or pass the blunt by using 100% slippage</p>
-  <a href="https://exchange.pancakeswap.finance/#/swap?outputCurrency=0x510A41Af47d93793882992E8fC2519Fbd72E4DcE" target="_blank"><button class="buttonstyle">BUY ON PANCAKESWAP</button></a><br/>
-  <a href="https://github.com/stonedmoon/contracts/blob/main/stonedmoon.sol">github</a>
-  <a href="https://bscscan.com/token/0x510A41Af47d93793882992E8fC2519Fbd72E4DcE">bscscan</a>
-  <a href="https://twitter.com/stoned_moon">twitter</a>
-  <a href="https://dxsale.app/app/pages/defipresale?saleID=717&chain=BSC">dxsale</a>
-  <a href="https://t.me/stonedmoontoken">telegram</a><br/>
-<iframe src="https://giphy.com/embed/3jcgPn9fzfaXc1EHJC" width="100%" style="max-width: 480px" height="415" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+  <a href="https://exchange.pancakeswap.finance/#/swap?outputCurrency=0x510A41Af47d93793882992E8fC2519Fbd72E4DcE" target="_blank"><button class="buttonstyle">BUY ON PANCAKESWAP</button></a><br/><br/>
+  <div style="">
+    <a href="https://github.com/stonedmoon/contracts/blob/main/stonedmoon.sol"><button class="smallbuttonstyle">github</button></a>
+    <a href="https://bscscan.com/token/0x510A41Af47d93793882992E8fC2519Fbd72E4DcE"><button class="smallbuttonstyle">bscscan</button></a>
+    <a href="https://twitter.com/stoned_moon"><button class="smallbuttonstyle">twitter</button></a>
+    <a href="https://t.me/stonedmoontoken"><button class="smallbuttonstyle">telegram</button></a>
+    <a href="https://dxsale.app/app/pages/defipresale?saleID=717&chain=BSC"><button class="smallbuttonstyle">dxsale</button></a>
+    <a href="https://poocoin.app/tokens/0x510A41Af47d93793882992E8fC2519Fbd72E4DcE"><button class="smallbuttonstyle">chart</button></a>
+  </div><br/>
+  <img src="https://media.giphy.com/media/3jcgPn9fzfaXc1EHJC/giphy.gif" style="width: 100vw, max-width: 480px;"/>
+
 	<br/>
   <a href="https://bscscan.com/tx/0xc45970598725f98c3994a1d8f2fe4a228cbd58dd963f8641a8dc218dd15cac48">contract renounced</a>
   <a href="https://dxsale.app/app/pages/dxlockview?id=0&add=0x8fb596FECC69692dc48C84635f1402230539bdD1&type=lplock&chain=BSC">liquidity locked</a>
   <a href="https://bscscan.com/tx/0x451abb019b4e59ac66b61f378d818e5d6254dc21b387bfa5a37de5173dd64f72">dev funds burned</a>
   <p>roadmap: stonedmoon v2 coming 4/20/21</p>
   <p>TOKEnomics: 70.58% burned. 18.77% locked in failed DxSale Presale Contract. 9.39% Pancakeswap Liquidity. Remaining 1.26% given out in twitter airdrop.</p>
+  <img style="width: 1vw; min-width: 20px" src="https://i.gifer.com/X11G.gif"/>
   <a href="https://the-hollywood-gossip-res.cloudinary.com/iu/s--nIRWcKSv--/t_full/cs_srgb,f_auto,fl_strip_profile.lossy,q_auto:420/v1366024358/snoop-at-the-mtv-movie-awards.jpg" target="_blank">proof of audit</a>
+  <img style="width: 1vw; min-width: 20px" src="https://i.gifer.com/X11G.gif"/>
 </div>
 
 </body>
